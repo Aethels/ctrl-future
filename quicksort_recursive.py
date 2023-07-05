@@ -40,4 +40,4 @@ else:
   print("Original array:", arr)
   # sort the array using quicksort and print it
   sorted_arr = quicksort(arr, 0, N-1)
-  print("Sorted array:", sorted_arr)
+  print("\nSorted array:", sorted_arr)
