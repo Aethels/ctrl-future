@@ -43,3 +43,10 @@ def binary_search(array, X, left, right):
 
 # call the function and store the result
 result = binary_search(array, X, 0, len(array) - 1)
+
+# print the result
+if result == -1:
+  print("The number", X, "is not in the array.")
+else:
+  print("The number", X, "is at index", result, "in the array.")
+
