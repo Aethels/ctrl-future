@@ -45,7 +45,7 @@ else:
   # randomly generate an array of N elements from 1 to 100
   arr = [random.randint(1,100) for _ in range(N)]
   # print the original array
-  print("Original array:\n", arr)
+  print("Original array:", arr)
   # sort the array using quicksort and print it
   sorted_arr = quicksort(arr)
-  print("Sorted array:", sorted_arr)
+  print("\nSorted array:", sorted_arr)
