@@ -1,5 +1,7 @@
 # Sample Codes for every week topics
 
+This repository contains sample codes of different algorithms and data structures in Python. Each folder represents a topic.
+
 ## Includes:
 * Week 1 - Binary Search(Recursive/Iterative)
 * Week 1 - Quick Sort(Recursive/Iterative)
