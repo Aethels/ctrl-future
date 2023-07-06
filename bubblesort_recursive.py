@@ -1,4 +1,4 @@
-# Import the random module
+# import the random module
 import random
 
 # Get the number of array elements from the user
