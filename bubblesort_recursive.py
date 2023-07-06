@@ -1,51 +1,28 @@
-# import random module
+# Import the random module
 import random
 
-# define a function for quicksort
-def quicksort(arr):
-  # create an empty stack
-  stack = []
-  # push the initial subarray indices to the stack
-  stack.append((0, len(arr) - 1))
-  # loop until the stack is empty
-  while stack:
-    # pop the top subarray indices from the stack
-    low, high = stack.pop()
-    # base case: if the subarray is empty or has one element, skip it
-    if low >= high:
-      continue
-    # choose a pivot element randomly
-    pivot = arr[random.randint(low, high)]
-    # partition the subarray into two subarrays: left and right
-    left = low
-    right = high
-    while left <= right:
-      # find the first element in the left subarray that is greater than or equal to the pivot
-      while arr[left] < pivot:
-        left += 1
-      # find the first element in the right subarray that is less than or equal to the pivot
-      while arr[right] > pivot:
-        right -= 1
-      # swap the elements if they are out of order
-      if left <= right:
-        arr[left], arr[right] = arr[right], arr[left]
-        left += 1
-        right -= 1
-    # push the left and right subarrays to the stack
-    stack.append((low, right))
-    stack.append((left, high))
-  # return the sorted array
-  return arr
+# Get the number of array elements from the user
+N = int(input("Enter the number of array elements: "))
 
-# take N from user and validate it
-N = int(input("Enter the size of the array: "))
-if N < 0:
-  print("Invalid input. Size must be positive.")
-else:
-  # randomly generate an array of N elements from 1 to 100
-  arr = [random.randint(1,100) for _ in range(N)]
-  # print the original array
-  print("Original array:", arr)
-  # sort the array using quicksort and print it
-  sorted_arr = quicksort(arr)
-  print("\nSorted array:", sorted_arr)
+# Generate a random array of size N
+array = [random.randint(1, 100) for _ in range(N)]
+
+# Print the original array
+print("Original array:", array)
+
+# Recursive bubble sort algorithm
+def bubble_sort(array, n):
+    # Base case: if the array has one or zero elements, it is already sorted
+    if n <= 1:
+        return array
+    # Loop through the array from the first to the second last element
+    for i in range(n - 1):
+        # Compare adjacent elements and swap them if they are out of order
+        if array[i] > array[i + 1]:
+            array[i], array[i + 1] = array[i + 1], array[i]
+    # Recursively call the bubble sort function on the subarray excluding the last element
+    return bubble_sort(array, n - 1)
+
+# Call the bubble sort function and print the sorted array
+sorted_array = bubble_sort(array, N)
+print("Sorted array:", sorted_array)
