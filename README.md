@@ -1,6 +1,6 @@
 # Sample Codes for every week topics
 
-This repository contains sample codes of different algorithms and data structures in different languages(Python, C, Java etc.). Each folder represents a topic.
+This repository contains sample codes of different algorithms and data structures in different languages(Python, C, Java etc.). Each folder represents a topic. Feel free to contribute ^^
 
 ## Includes:
 * Week 1 - Binary Search(Recursive/Iterative)
