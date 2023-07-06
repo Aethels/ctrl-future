@@ -10,7 +10,10 @@ This repository contains sample codes of different algorithms and data structure
 * Week 1 - Insertion Sort
 * Week 1 - Memoization Techniques
  <hr>
+
 * Week 1 - Data Structures Samples(LinkedList,Graph,Tree)
 * Week 1 - Data Structures Samples(Pointers)
+
  <hr>
+ 
 * Week 1 - OOP Sample(Encapsulation,Inheritance,Abstraction,Polymorphism)
