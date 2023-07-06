@@ -8,3 +8,4 @@ This repository contains sample codes of different algorithms and data structure
 * Week 1 - Bubble Sort(Recursive/Iterative)
 * Week 1 - Merge Sort
 * Week 1 - Insertion Sort
+* Week 1 - Memoization Techniques
